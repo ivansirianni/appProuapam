@@ -33,12 +33,12 @@ const ritmos = new Cursos("Ritmos Folclóricos y Latinos", "Martes 18hs", "Pablo
 
 //Miercoles
 const acuarela = new Cursos("Acuarela", "Miércoles 10hs", "Adriana Palma", "Sarmiento 784. PISO 2 AULA 5")
-const psico = new Cursos("Psiconeuroendocrinoinmunología", "Miércoles 11hs", "Eduardo Udisio y equipo.", "Sarmiento 784. PISO 1 AULA 2")
+const psico = new Cursos("Psiconeuroendocrinoinmunología", "Miércoles 11hs", "Eduardo Audisio y equipo.", "Sarmiento 784. PISO 1 AULA 2")
 const magdalena = new Cursos("Eros y la sexualidad en la Grecia Antigua", "Miércoles 15:30hs", "Magdalena Aliau", "Sarmiento 784. PISO 1 AULA 2")
 const magia = new Cursos("Iniciación a la magia", "Miércoles 16hs", "Gustavo Seoane", "Sarmiento 784. PISO 2 AULA 5")
 const textil = new Cursos("Taller de creación Textil", "Miércoles 18hs", "Ivana Mingorance", "Sarmiento 784. PISO 2 AULA 5")
 const tendencias = new Cursos("Tendencias actuales de la política Internacional", "Miércoles 18hs", "Ornela Fabani y equipo", "Sarmiento 784. PISO 1 AULA 2")
-const motola = new Cursos("Literatura, mitología y religión", "Miércoles 18hs", "Adriana Palma", "Sarmiento 784. PISO 1 AULA 3")
+const motola = new Cursos("Literatura, mitología y religión", "Miércoles 18hs", "Marcelo Móttola", "Sarmiento 784. PISO 1 AULA 3")
 const informatica = new Cursos("ProUAPAM Digital - Informática", "Miércoles 15hs", "Rocio Villoria", "FAC. CS. ECONÓMICAS")
 
 //Jueves
@@ -76,7 +76,7 @@ const buscarProductos = ()=>{
 
     const contCursos = textoBuscar.value.toLowerCase();    
     for (let curso of cursos){
-        let descripcion = curso.nombre.toLowerCase() && curso.docente.toLowerCase();       
+        let descripcion = curso.nombre.toLowerCase() ;       
         if(descripcion.indexOf(contCursos) !== -1){
                 resultadoBusqueda.innerHTML += `                                              
                                                 <div class="card" style="width: 20rem">
